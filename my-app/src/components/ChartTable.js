@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-
+import './styles.css'
 
 const ChartTable = () => {
   const [tableChart, setTableChart] = useState({})
-  const apiUrl = "https://api.coinranking.com/v2/coins/?limit=10";
+  const apiUrl = "https://api.coinranking.com/v2/coins/?limit=5";
   const proxyUrl = "https://cors-anywhere.herokuapp.com/";
   const apiKey = "coinrankinga0ceefd513dd1a624e417b344fe709aa19ae1907bfb5ac6d";
 
@@ -36,7 +36,7 @@ const ChartTable = () => {
 
 
   return (
-    <div>
+    <div className="table_ctr">
 
   <h3>Top 10 Cryptocurrency Prices</h3>
 <table>
